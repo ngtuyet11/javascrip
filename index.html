@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="chart.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Nguyễn Thị Tuyết - B19DCDT212</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="header text-dark text-center font-weight-bold">Thời tiết</div>
+        <div class="row text-center font-weight-bold">
+            <div class="table-header col">Nhiệt Độ</div>
+            <div class="table-header col ">Độ Ẩm</div>
+            <div class="table-header col ">Ánh sáng</div>
+        </div>
+        <div class="row bg-light text-center font-weight-bold">
+            <div class="table-content col" id="temperature">
+                
+            </div>
+            <div class="table-content col" id="humidity">
+                
+            </div>
+            <div class="table-content col" id="light">
+                
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-8 mt-3">
+                <figure class="highcharts-figure">
+                    <div id="container"></div>
+                </figure>
+            </div>
+            <div class="col-4 mt-3">
+                <!-- <div class="d-flex flex-column justify-content-around align-items-center" style="height: 100%; border: 1px solid black">
+                    <div class="text-center switch-wrapper" style="border-bottom: 1px solid black ;">
+                        <div>
+                            <h3 style="font-size: 50px;">Switch 1</h3>
+                            <button onclick="switchOnOff(event, 0)" class="btn btn-secondary btn-lg">ON</button>
+                        </div>
+                    </div>
+                    <div class="text-center switch-wrapper">
+                        <div>
+                            <h3 style="font-size: 50px;">Switch 2</h3>
+                            <button onclick="switchOnOff(event, 1)" class="btn btn-secondary btn-lg">ON</button>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="bg-btn text-center"id="nut1" style="height: 50% ;">
+                    <h3 style="font-size: 50px;">Công tắc 1</h3>
+                    <img id="myImage" src="densang.png" style="width:50%" alt="">
+                    <button type="button" class="btn btn-success" onclick="on()">on</button>
+                    <button type="button" class="btn btn-danger" onclick="off()">off</button>
+                    <!-- <button class="btn-on btn btn-success btn-lg">ON</button>
+                    <button class="btn-off btn-danger btn-lg">OFF</button> -->
+                </div>
+                <div class="text-center" id="nut2">
+                    <h3 style="font-size: 50px;">Công tắc 2</h3>
+                    <img id="myImages" src="densang.png" style="width:50% " alt="">
+                    <button onclick="switchOnOff()" class="btn btn-success btn-lg">ON</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/series-label.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="./main.js"></script>
+<script src="./main2.js"></script>
+<script src="./highchart_lib.js"></script>
+</html>
